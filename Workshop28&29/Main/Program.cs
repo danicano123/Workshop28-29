@@ -1,4 +1,5 @@
 ﻿using MadisonBridges;
+using TheStrongestBeam;
 
 int option = 5;
 while (option != 0)
@@ -32,7 +33,14 @@ while (option != 0)
             break;
 
         case 2:
-            Console.WriteLine("kk");
+            Console.WriteLine("Type the Beam schema: ");
+            Beam beam = new(Console.ReadLine());
+            if (beam.IsValid())
+            {
+                Console.WriteLine("La viga soporta el peso!");
+                break;
+            }
+            Console.WriteLine("La viga NO soporta el peso!");
             break;
 
         default:

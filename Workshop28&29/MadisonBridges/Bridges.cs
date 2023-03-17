@@ -41,7 +41,6 @@ namespace MadisonBridges
             {
                 if (subString[i].Length == 2 && subString[i].Length == 3)
                 {
-                    Console.WriteLine("wtf");
                     return false;
                 }
                 if (subString.Length % 2 == 0)
